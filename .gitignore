@@ -13,3 +13,12 @@
 .externalNativeBuild
 .cxx
 local.properties
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    enp0s3:
+      dhcp4: no
+      addresses:
+        - 192.168.254.2/24
+      gateway4: 192.168.254.1
